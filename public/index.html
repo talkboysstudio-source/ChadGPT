@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>ChadGPT</title>
 <link href="https://fonts.googleapis.com/css2?family=Söhne:wght@400;500;600&family=Söhne+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono&display=swap" rel="stylesheet">
@@ -31,6 +31,7 @@
     height: 100vh;
     display: flex;
     overflow: hidden;
+    padding-top: env(safe-area-inset-top, 0px);
   }
 
   /* SIDEBAR */
@@ -397,7 +398,7 @@
     .footer { padding: 12px 12px 16px; position: sticky; bottom: 0; background: var(--bg); }
     .input-wrap { border-radius: 12px; padding: 10px 12px; }
     #user-input { font-size: 16px; }
-    .topbar { padding: 10px 16px; }
+    .topbar { padding: 10px 16px; padding-top: env(safe-area-inset-top, 20px); margin-top: 8px; }
     .msg-inner { padding: 0 14px; gap: 10px; }
     .msg-icon { width: 26px; height: 26px; font-size: 14px; }
     .msg-text { font-size: 0.9rem; }
